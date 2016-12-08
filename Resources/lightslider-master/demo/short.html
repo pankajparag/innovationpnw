@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="../src/css/lightslider.css"/>
+    <style>
+    ul{
+      list-style: none outside none;
+        padding-left: 0;
+            margin: 0;
+    }
+    .demo .item{
+        margin-bottom: 60px;
+    }
+    .content-slider li{
+        background-color: #ed3020;
+        text-align: center;
+        color: #FFF;
+    }
+    .content-slider h3 {
+        margin: 0;
+        padding: 70px 0;
+    }
+    .demo{
+      width: auto;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../src/js/lightslider.js"></script> 
+    <script>
+     $(document).ready(function() {
+      $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+    });
+    </script>
+</head>
+<body>
+	<div class="demo">
+        <div class="item">
+            <div class="clearfix">
+                <ul id="content-slider" class="content-slider">
+                    <li > 
+                        <img src="img/cS-1.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-2.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-3.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-4.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-5.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-6.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-7.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-8.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-9.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-10.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-11.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-12.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-13.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-14.jpg" />
+                         </li>
+                    <li > 
+                        <img src="img/cS-15.jpg" />
+                         </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>	
+</body>

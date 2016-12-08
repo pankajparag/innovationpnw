@@ -2,25 +2,38 @@
 
 <html lang="en">
 <head>
-  <title>Innovation in Pacific North West</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon; charset=binary">
+  <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon; charset=binary">
+
+  <title>Innovation at Pacific Northwest</title>
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="1024" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <!--  <link rel="stylesheet" type="text/css" href="/viewer/viewer.css"/>
-  <script src='/viewer/viewer.js' type='text/javascript'></script> -->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  <script src="res/lightslider.js"></script>
+    <script>
+     $(document).ready(function() {
+      $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+    });
+    </script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -35,410 +48,462 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#myPage">
-          <img src="images\FinalFACCLogo.jpg" class="img-rounded" alt="FACC" width="180" height="90">
+          <img src="images/logo/FinalFACCLogo.JPG" class="img-rounded" alt="FACC">
         </a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#myPage">HOME</a></li>
-          <li><a href="#register">REGISTER</a></li>
+          <li class="active"><a href="#myPage">HOME</a></li>
+          <li><a href="#register">NEXT EVENT</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#events">PAST EVENTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Merchandise</a></li>
-              <li><a href="#">Extras</a></li>
-              <li><a href="#">Media</a></li>
-            </ul>
-          </li>
+          <li><a href="#companies">SPONSORS</a></li>
+          <li><a href="index.html"><img src="images/logo/usa-icon.png" alt="en" /></a></li>
+          <li><a href="fr.html"><img src="images/logo/france-icon.png" alt="fr" /></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Carousel-->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="images\presentation1.jpg" alt="New York" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>Here is something to say about</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="images\presentation2.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="images\presentation3.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
-        </div>
-      </div>
+  <div class="container-fluid">
+    <!-- Jumbotron -->
+<!--    <div class="jumbotron">
+      <h1>High Tech and Innovation Committee</h1>      
+      <p>Sharing, Learning, Networking</p>
     </div>
+-->
+    <!-- Carousel-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <!-- Upcoming events -->
-  <div id="register" class="container">
-    <div class="col-sm-4" >
-      <img src="images\carouselbackup.jpg" alt="upcoming event" width="350" height="300"/>
-    </div>
-    <div class="col-sm-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, .</p>
-      <p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-      <br>
-      <button class="btn btn-default btn-lg">Register Here</button>
-    </div>
-  </div>
-
-  <!-- Video -->
-  <div class="container text-center">
-    <h2>Our Vision</h2>
-      <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ozLaklIFWUI" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-
-  <!-- About Us -->
-  <div id = "about" class="container text-center">
-    <h3>HiTech Innovation Committe INNOVATION PNW</h3>
-    <p><em>The FACC High-Tech and Innovation Committee is a group established by the French-American Chamber of Commerce of the Pacific Northwest (FACC PNW).</em></p>
-    <p>Its purpose is to create an active network of French-speaking individuals (“Franco-phones”) and French / American companies sharing a common interest in High-Tech and Innovation</p>
-    <br/>
-
-    <div class="row">
-      <h4>Board of Directors</h4>
-      <div class="col-sm-4">
-        <a href="#philippe" data-toggle="collapse">
-          <img src="images\PhilippeBattel.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Philippe Battel</strong></p><br>
-        <div id="philippe" class="collapse">
-          <p>Chairman of the board</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/carousel/Carousel01.jpg" alt="Microsoft">
+          <div class="carousel-caption">
+            <h1>MICROSOFT Innovations : 2014</h1>
+            <h3> Alan-Crozier, President of Microsoft France speaking</h3>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <a href="#david" data-toggle="collapse">
-          <img src="images\DavidSanguin.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>David Sanguin</strong></p><br>
-        <div id="david" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
+
+        <div class="item">
+          <img src="images/carousel/Carousel02.jpg" alt="Exequo">
+          <div class="carousel-caption">
+            <h1>EXEQUO: Innovation in gaming 2015</h1>
+            <h3>High tech committe board member with Stephane Bonfils</h3>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-4">
-        <a href="#marion" data-toggle="collapse">
-          <img src="images\MarionDesmazieres.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Marion Desmazieres</strong></p><br>
-        <div id="marion" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <a href="#ben" data-toggle="collapse">
-          <img src="images\BenjaminOrillon.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Benjamin Orillon</strong></p><br>
-        <div id="ben" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <a href="#anne" data-toggle="collapse">
-          <img src="images\Anne-ChloeWambre.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Anne-Chloe Wambre</strong></p><br>
-        <div id="anne" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-      <a href="#alex" data-toggle="collapse">
-        <img src="images\AlexandreZanghellini.jpg" class="img-circle person" alt="Random Name">
-      </a>
-      <p class="text-center"><strong>Alexandre Zanghellini</strong></p><br>
-        <div id="alex" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <h4>French-American Chamber of Commerce</h4>
-      <div class="col-sm-4">
-        <a href="#jack" data-toggle="collapse">
-          <img src="images\JackCowan.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Jack Cowan</strong></p><br>
-        <div id="jack" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <a href="#claire" data-toggle="collapse">
-          <img src="images\ClaireBouchot.jpg" class="img-circle person" alt="Random Name">
-        </a>
-        <p class="text-center"><strong>Claire Bouchot</strong></p><br>
-        <div id="claire" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-      <a href="#pankaj" data-toggle="collapse">
-        <img src="images\PankajParag.jpg" class="img-circle person" alt="Random Name">
-      </a>
-      <p class="text-center"><strong>Pankaj Parag</strong></p><br>
-        <div id="pankaj" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Past Events -->
-   <div id= "events" class="container text-center">
-    <h3 class="text-center">OUR PAST EVENTS</h3>
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#hololens">Microsoft Research</a></li>
-      <li><a data-toggle="tab" href="#alexa">Amazon</a></li>
-      <li><a data-toggle="tab" href="#menu2">Exequo</a></li>
-      <li><a data-toggle="tab" href="#menu1">Amazon</a></li>
-      <li><a data-toggle="tab" href="#cloudComputing">Microsoft</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <div id="hololens" class="tab-pane fade in active">
-        <h2>Microsoft Research</h2>
-        <p>Discover cutting-edge Innovations & Technologies from Microsoft Research Scientists.</p>
-        <p>86 people from 36 companies</p>
-      </div>
-      <div id="alexa" class="tab-pane fade">
-        <h2>Amazon Alexa</h2>
-        <p>2015/11/12</p>
-        <p>Gilles Belin, Sr. Manager, QA & Engineering Service in the Alexa team gave a talk –en français– about the launch of Echo, Amazon’s hands-free device, and did a quick demo of Alexa, its cloud-based voice service.</p>
-        <p>Beatrice Geoffrin, Director Product Management at Amazon, will also give a short talk about her international career and the Amazon culture around embracing risk</p>
-        <p>68 people 25 companies</p>
-      </div>
-      <div id="menu2" class="tab-pane fade">
-        <h2>Peter Griffin, Bass player</h2>
-        <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
-      </div>
-      <div id="cloudComputing" class="tab-pane fade">
-        <h2>Microsoft Research</h2>
-        <p>Discover cutting-edge Innovations & Technologies from Microsoft Research Scientists.</p>
-        <p>30 people</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Container (Contact Section) -->
-  <div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love to hear from you</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p>Questions? Write to us a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>2200 Alaskan Way, Suite 490, Seattle, WA 98121</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: Tel: (206) 443-4703 | Fax: (206) 448-4218</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: info@faccpnw.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div id="googleMap"></div>
-
-  <!-- Add Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-    var myCenter = new google.maps.LatLng(47.6111584,-122.3497582);
-
-    function initialize() {
-      var mapProp = {
-        center:myCenter,
-        zoom:13,
-        scrollwheel:false,
-        draggable:false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-
-      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-      var marker = new google.maps.Marker({
-        position:myCenter,
-      });
-
-      marker.setMap(map);
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-
-  <!-- sponsoring companies -->
-  <div id="companies" class="container-fluid">
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\aerospacePreceision.gif" alt="Aerospace Precision, Inc." /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\arenanet.png" alt="ArenaNet" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\maestrano.png" alt="Maestrano" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\auth0.png" alt="Auth0" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\azaleos.png" alt="Azaleos Corporation" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\capitalOneSharebuilder.jpg" alt="Capital One Sharebuilder" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\marvellSemiconductor.jpg" alt="Marvell Semiconductor" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\clt2.jpg" alt="CTL2 (Founder Sagem Morpho)" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\eagleview.jpg" alt="Eagleview" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\ecpva.jpg" alt="Ecova" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\endeavorConsulting.png" alt="Endeavor Consulting" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\gameloft.png" alt="Gameloft" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\glympse.png" alt="Glympse" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\godaddy.png" alt="GoDaddy" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\google.png" alt="Google" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\hyperquality.jpg" alt="HyperQuality Inc. " /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\instantservice.png" alt="InstantService Inc. " /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\intel.png" alt="Intel Corporation" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\intermec.gif" alt="Intermec" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\isecpartners.png" alt="iSEC Partners" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\iShow.png" alt="iShow.com, Inc" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="IT Consultant" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\lendingRobot.png" alt="LendingRobot.com" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\lucid.gif" alt="Lucid8" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\meridian.png" alt="Meridian school" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="MetaInfo" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\mintonic.png" alt="Mintonic" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\monolith.png" alt="Monolith productions" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\neos-sdi.png" alt="Neos-Sdi" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\oneaccord.png" alt="OneAccord Corp" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="Open Systems management" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="Phd Artificial intelligence" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\sagem.png" alt="Sagem Avionics" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\squarehub.jpg" alt="SquareHub" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\starbucks.jpg" alt="Starbucks" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\streambox.png" alt="Streambox Inc. " /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\tableau.png" alt="Tableau Software" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\pokemon.png" alt="The Pokémon Comp. Intern." /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\t-mobile.jpg" alt="T-Mobile" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\uw.png" alt="University of Washington" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="Valve" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="Xoasis Networks Inc. " /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\amazon.png" alt="Amazon.com" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\dassault.jpg" alt="Dassault Systems" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\adeno.jpg" alt="Adeneo Embedded" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\alstom.jpg" alt="Alstom Grid Inc. " /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\exequp.png" alt="Exequo" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\sogeti.png" alt="Sogeti Group" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\wadepCom.png" alt="WA Department of Commerce" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\.png" alt="Independent consultant" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\realNetworks.png" alt="Realnetworks" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\cgf.png" alt="Consulate General of France" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\microsoft.png" alt="Microsoft" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\agencymania.png" alt="Agency Mania Solutions" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\arzeda.png" alt="Arzeda" /> </div>
-    <div class="col-sm-2"> <img width= "200px" height = "100px" src="images\companies\norstrom.jpg" alt="Nordstrom" /> </div>
-  </div>
-
-  <!-- Footer -->
-    <footer class="text-center">
-      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a><br><br>
-      <p>Hello <a href="http://www.innovationpnw.org" data-toggle="tooltip" title="Welcome ">This is a place holder text</a></p>
-    </footer>
-
-    <script>
-    $(document).ready(function(){
-      // Initialize Tooltip
-      $('[data-toggle="tooltip"]').tooltip();
       
-      // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        <div class="item">
+          <img src="images/carousel/Carousel03.jpg" alt="Amazon">
+          <div class="carousel-caption">
+            <h1>AMAZON 2015</h1>
+            <h3>Gilles-Belin, Senior Manager Alexa (Echo) speaking</h3>
+          </div>
+        </div>
+      </div>
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-          // Prevent default anchor click behavior
-          event.preventDefault();
+    <!-- Upcoming events -->
+    <div id="register" class="container">
+        <h4>NEXT EVENT</h4>
+        <div class="row">
+          <div class="col-sm-4" >
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="356" height="200" src="https://www.youtube.com/embed/-9LtKfpXaf4" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <p>The FACC PNW High Tech & Innovation Committee is back with another exciting event! The Committee organizes an event on the theme:  Start-up in technology founded or led by Frenchmen in the Pacific Northwest. Questions related to the creation of a startup will be addressed. Presentations will be in French.</p>
+            <button class="btn btn-lg" id="btnRegister"><a href= "https://www.eventbrite.com/e/high-tech-innovation-committee-event-tickets-28562741930">Register Here</a></button>
+          </div>
+          <div class="col-sm-4">
+              <strong>THEME:</strong> Startups <br/>
+              <strong>WHERE:</strong> SURF Incubator <br/>
+              <strong>Address:</strong>
+              <address>
+                <strong>SURF Incubator</strong><br/>
+                      999 Third Ave Suite 700 <br/>
+                      7th Floor <br/>
+                      Seattle, WA 98104 <br/>
+                </address>
+              <strong>WHEN:</strong> <em>Thursday, December 8, 2016 from 6:00 PM to 8:30 PM (PDT)</em>
+              <p>Parking will be FREE.</p>
+              <p>Food and drinks will be provided. It is an amazing opportunity to learn more about startups, but also to network and meet people from various sectors!</p>
+            <br />
+          </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-4">
+              <a href="#StepahneBennour" data-toggle="collapse">
+                <img src="images/people/StepahneBennour.jpg" class="img-circle person" alt="Stephane Bennour">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/stephanebennour"><strong>Stephane Bennour</strong></a></p><br>
+              <div id="StepahneBennour" class="collapse">
+                <p>CEO & Founder of NEOS-SDI</p>
+                <p>What it takes to become a successful entrepreneur!</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#AlexandreZanghellini" data-toggle="collapse">
+                <img src="images/people/AlexandreZanghellini.jpg" class="img-circle person" alt="Alexandre Zanghellini">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/alexandre-zanghellini-276338"><strong>Alexandre Zanghellini</strong></a></p><br>
+              <div id="AlexandreZanghellini" class="collapse">
+                <p>CEO & Founder of ARZEDA - Entrepreneur @ Arzeda</p>
+                <p>biotech company - challenges and lessons learnt</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#ThomasVanDeVelde" data-toggle="collapse">
+                <img src="images/people/ThomasVanDeVelde.jpg" class="img-circle person" alt="Thomas Van De Velde">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/thomasvdv "><strong>Thomas Van De Velde</strong></a></p><br>
+              <div id="ThomasVanDeVelde" class="collapse">
+                <p>GM at Geek Squad on Demand - Intrapreneur @ Geek Squad</p>
+                <p>consumer electronics support “uberlike” - challenges and lessons learnt</p>
+              </div>
+            </div>
+        </div>
+    </div>
 
-          // Store hash
-          var hash = this.hash;
+    <div id = "about">
+    <!-- Video -->
+        <div class="container text-center">
+          <h4>Our Vision</h4>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ha-_v5WJcg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
+        <!-- About Us -->
+        <div class="container text-center">
+          <h4>High-Tech Innovation Committee INNOVATION PNW</h4>
+          <p><em>The FACC High-Tech and Innovation Committee is a group established by the French-American Chamber of Commerce of the Pacific Northwest (FACC PNW).</em></p>
+          <p>Its purpose is to create an active network of French-speaking individuals (“Franco-phones”) and French / American companies sharing a common interest in High-Tech and Innovation</p>
+          <br/>
+
+          <div class="row">
+            <h3>Board of Directors</h3>
+            <div class="col-sm-4">
+              <a href="#philippe" data-toggle="collapse">
+                <img src="images/people/PhilippeBattel.jpg" class="img-circle person" alt="Philippe Battel">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/philippe-battel-33a263"><strong>Philippe Battel</strong></a></p><br>
+              <div id="philippe" class="collapse">
+                <p>Chairman of the board</p>
+                <p>Senior Sales Director, Microsoft</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#david" data-toggle="collapse">
+                <img src="images/people/DavidSanguin.jpg" class="img-circle person" alt="David Sanguin">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/davidsanguin"><strong>David Sanguin</strong></a></p><br>
+              <div id="david" class="collapse">
+                <p></p>
+                <p>Vice President, Pcubed</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#marion" data-toggle="collapse">
+                <img src="images/people/MarionDesmazieres.jpg" class="img-circle person" alt="Marion Desmazieres">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/mariondesmazieres"><strong>Marion Desmazieres</strong></a></p><br>
+              <div id="marion" class="collapse">
+                <p></p>
+                <p>Partner Program manager, Amazon</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="#ben" data-toggle="collapse">
+                <img src="images/people/BenjaminOrillon.jpg" class="img-circle person" alt="Benjamin Orillon">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/benoril"><strong>Benjamin Orillon</strong></a></p><br>
+              <div id="ben" class="collapse">
+                <p></p>
+                <p>Assistant head of School, FASPS</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#anne" data-toggle="collapse">
+                <img src="images/people/Anne-ChloeWambre.jpg" class="img-circle person" alt="Anne-Chloe Wambre">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/annechloewambrepareja"><strong>Anne-Chloe Wambre</strong></a></p><br>
+              <div id="anne" class="collapse">
+                <p></p>
+                <p>Senior Marketing Manager, Amazon</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+            <a href="#alex" data-toggle="collapse">
+              <img src="images/people/AlexandreZanghellini.jpg" class="img-circle person" alt="Alexandre Zanghellini">
+            </a>
+            <p class="name text-center"><a href="https://www.linkedin.com/in/alexandre-zanghellini-276338"><strong>Alexandre Zanghellini</strong></a></p><br>
+              <div id="alex" class="collapse">
+                <p></p>
+                <p>Cofounder & CEO, Arzeda</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <h3>French-American Chamber of Commerce</h3>
+            <div class="col-sm-4">
+              <a href="#jack" data-toggle="collapse">
+                <img src="images/people/JackCowan.jpg" class="img-circle person" alt="Jack Cowan">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/jackcowan"><strong>Jack Cowan</strong></a></p><br>
+              <div id="jack" class="collapse">
+                <p></p>
+                <p>Executive Director, FACCPNW</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <a href="#claire" data-toggle="collapse">
+                <img src="images/people/ClaireBouchot.jpg" class="img-circle person" alt="Claire Bouchot">
+              </a>
+              <p class="name text-center"><a href="https://www.linkedin.com/in/claire-bouchot-419b71100/en"><strong>Claire Bouchot</strong></a></p><br>
+              <div id="claire" class="collapse">
+                <p></p>
+                <p>Trade & Event Assistant (Intern), FACCPNW</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+            <a href="#pankaj" data-toggle="collapse">
+              <img src="images/people/PankajParag.jpg" class="img-circle person" alt="Pankaj Parag">
+            </a>
+            <p class="name text-center"><a href="https://www.linkedin.com/in/pankajparag"><strong>Pankaj Parag</strong></a></p><br>
+              <div id="pankaj" class="collapse">
+                <p></p>
+                <p>Software Developer, Microsoft</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Past Events -->
+     <div id= "events" class="container text-center">
+      <h4 class="text-center">OUR PAST EVENTS</h4>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#hololens">Microsoft Research</a></li>
+        <li><a data-toggle="tab" href="#alexa">Amazon</a></li>
+        <li><a data-toggle="tab" href="#exequo">Exequo</a></li>
+        <li><a data-toggle="tab" href="#amazon">Amazon</a></li>
+        <li><a data-toggle="tab" href="#cloudComputing">Microsoft</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="hololens" class="tab-pane fade in active">
+          <h2>Microsoft Research</h2>
+          <strong>April 2016</strong>
+          <p>Discover cutting-edge Innovations & Technologies from Microsoft Research Scientists.</p>
+          <p>86 people from 36 companies</p>
+          <div>
+            <div class="col-sm-3"><img src="images/events/MSResearch2016/MSResearch2016_1.jpg" width="250px" height="200px"></div>
+            <div class="col-sm-3"><img src="images/events/MSResearch2016/MSResearch2016_2.jpg" width="250px" height="200px"></div>
+            <div class="col-sm-3"><img src="images/events/MSResearch2016/MSResearch2016_3.jpg" width="250px" height="200px"></div>
+            <div class="col-sm-3"><img src="images/events/MSResearch2016/MSResearch2016_4.jpg" width="250px" height="200px"></div>
+          </div>
+        </div>
+        <div id="alexa" class="tab-pane fade">
+          <h2>Amazon Alexa</h2>
+          <p>November 2015</p>
+          <p>Gilles Belin, Sr. Manager, QA & Engineering Service in the Alexa team gave a talk –en français– about the launch of Echo, Amazon’s hands-free device, and did a quick demo of Alexa, its cloud-based voice service.</p>
+          <p>Beatrice Geoffrin, Director Product Management at Amazon, will also give a short talk about her international career and the Amazon culture around embracing risk</p>
+          <p>68 people 25 companies</p>
+          <div>
+            <div class="col-sm-6"><img src="images/events/Amazon2015/Amazon2015_1.jpg" width="400px" height="200px"></div>
+            <div class="col-sm-6"><img src="images/events/Amazon2015/Amazon2015_2.jpg" width="350px" height="200px"></div>
+          </div>
+        </div>
+        <div id="exequo" class="tab-pane fade">
+          <h2>EXEQUO event</h2>
+          <p>June 2015</p>
+          <p>Game development.</p>
+          <p>Demonstration of one of its last project</p>
+          <div>
+            <div class="col-sm-4"><img src="images/events/Exequo2015/Exequo2015_1.jpg" width="250px" height="200px"></div>
+            <div class="col-sm-4"><img src="images/events/Exequo2015/Exequo2015_2.jpg" width="250px" height="200px"></div>
+            <div class="col-sm-4"><img src="images/events/Exequo2015/Exequo2015_3.jpg" width="250px" height="200px"></div>
+          </div>
+        </div>
+        <div id="amazon" class="tab-pane fade">
+          <h2>Amazon</h2>
+          <p>December 2014</p>
+          <p>Eric Broussard, VP International sales at Amazon</p>
+          <p>Interactive session together around the issue of "innovation in the IT Sector"</p>
+        </div>
+        <div id="cloudComputing" class="tab-pane fade">
+          <h2>Microsoft</h2>
+          <p>September 2014</p>
+          <p>Alain Crozier, President of Microsoft France speaking about cloud computing</p>
+          <p>Discover cutting-edge Innovations & Technologies from Microsoft Research Scientists.</p>
+          <p>30 people</p>
+          <div>
+            <div class="col-sm-6"><img src="images/events/MS2014/MS2014_1.jpg" width="400px" height="200px"></div>
+            <div class="col-sm-6"><img src="images/events/MS2014/MS2014_2.jpg" width="350px" height="200px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h4 class="text-center">Contact</h4>
+        <p class="text-center"><em>We love to hear from you</em></p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <p>Questions? Write to us a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>2200 Alaskan Way, Suite 490, Seattle, WA 98121</p>
+            <p><span class="glyphicon glyphicon-phone"></span> <abbr title="Phone">P:</abbr>(206) 443-4703 | <abbr title="Fax">F:</abbr>: (206) 448-4218</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: info@faccpnw.com</p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- sponsoring companies -->
+<!--
+    <div id="sponsors">
+        <div class="demo">
+            <div class="item">
+                <div class="clearfix">
+                    <ul id="content-slider" class="content-slider">
+                     <li> <img width= "200px" height = "100px" src="images\companies\aerospacePrecision.gif" alt="Aerospace Precision, Inc." /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\arenanet.png" alt="ArenaNet" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\maestrano.png" alt="Maestrano" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\auth0.png" alt="Auth0" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\azaleos.png" alt="Azaleos Corporation" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\capitalOneSharebuilder.jpg" alt="Capital One Sharebuilder" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\marvellSemiconductor.jpg" alt="Marvell Semiconductor" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\ctl2.jpg" alt="CTL2 (Founder Sagem Morpho)" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\eagleview.jpg" alt="Eagleview" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\ecova.jpg" alt="Ecova" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\endeavorConsulting.png" alt="Endeavor Consulting" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\gameloft.png" alt="Gameloft" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\glympse.png" alt="Glympse" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\godaddy.png" alt="GoDaddy" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\google.png" alt="Google" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\hyperquality.jpg" alt="HyperQuality Inc. " /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\instantservice.png" alt="InstantService Inc. " /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\intel.png" alt="Intel Corporation" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\intermec.gif" alt="Intermec" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\isecpartners.png" alt="iSEC Partners" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\iShow.png" alt="iShow.com, Inc" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="IT Consultant" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\lendingRobot.png" alt="LendingRobot.com" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\lucid8.gif" alt="Lucid8" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\meridian.png" alt="Meridian school" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="MetaInfo" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\mintonic.png" alt="Mintonic" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\monolith.png" alt="Monolith productions" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\neos-sdi.png" alt="Neos-Sdi" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\oneaccord.png" alt="OneAccord Corp" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="Open Systems management" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="Phd Artificial intelligence" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\sagem.png" alt="Sagem Avionics" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\squarehub.jpg" alt="SquareHub" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\starbucks.jpg" alt="Starbucks" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\streambox.png" alt="Streambox Inc. " /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\tableau.png" alt="Tableau Software" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\pokemon.png" alt="The Pokémon Comp. Intern." /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\t-mobile.jpg" alt="T-Mobile" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\uw.png" alt="University of Washington" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="Valve" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="Xoasis Networks Inc. " /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\amazon.png" alt="Amazon.com" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\dassault.jpg" alt="Dassault Systems" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\adeneo.jpg" alt="Adeneo Embedded" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\alstom.jpg" alt="Alstom Grid Inc. " /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\exequo.png" alt="Exequo" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\Sogeti.png" alt="Sogeti Group" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\wadepCom.png" alt="WA Department of Commerce" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\.png" alt="Independent consultant" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\realNetworks.png" alt="Realnetworks" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\cgf.jpg" alt="Consulate General of France" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\microsoft.png" alt="Microsoft" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\agencymania.png" alt="Agency Mania Solutions" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\arzeda.png" alt="Arzeda" /> </li>
+                     <li> <img width= "200px" height = "100px" src="images\companies\nordstrom.jpg" alt="Nordstrom" /> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Footer -->
+      <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p> &copy; Copyright <a href="http://www.faccpnw.org" data-toggle="tooltip" title="Welcome ">FACCPNW</a> 2016</p>
+      </footer>
+
+      <script>
+      $(document).ready(function(){
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
       });
-    })
-    </script>
-
-  </body>
+      </script>
+  </div>
+</body>
 </html>

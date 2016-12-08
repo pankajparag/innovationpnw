@@ -3,32 +3,36 @@
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
   }
-  h3, h4 {
+  h3 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;
       font-size: 20px;
-      color: #111;
+      color: #fd2d30;
+  }
+  h4 {
+      margin: 10px 0 10px 0;
+      letter-spacing: 5px;
+      font-size: 18px;
   }
   .container {
       padding: 20px 20px 20px 20px;
   }
   .row {
-    padding: 0px 10px;
+      padding: 0px 10px;
   }
   .person {
-      border: 10px solid transparent;
+      border: 20px solid transparent;
       margin-bottom: 25px;
       width: 80%;
       height: 80%;
       opacity: 0.9;
   }
   .person:hover {
-      border-color: #f1f1f1;
+      border-color: #fd2d30;
   }
   .carousel-inner img {
-      -webkit-filter: grayscale(10%);
-      filter: grayscale(10%); /* make all photos black and white */
       width: 100%; /* Set width to 100% */
+      height: 600px;
   }
   .carousel-caption h3 {
       color: #fff !important;
@@ -63,18 +67,21 @@
   }
   .btn {
       padding: 10px 20px;
-      background-color: #333;
-      color: #f1f1f1;
+      background-color: #fd2d30;
+      color: #fd2d30;
       border-radius: 0;
       transition: .2s;
   }
   .btn:hover, .btn:focus {
-      border: 1px solid #333;
+      border: 1px solid #fd2d30;
       background-color: #fff;
       color: #000;
   }
+  .btn a{
+    color: #fff;
+  }
   .modal-header, h4, .close {
-      background-color: #333;
+      background-color: #fd2d30;
       color: #fff !important;
       text-align: center;
       font-size: 30px;
@@ -88,19 +95,23 @@
   #googleMap {
       width: 100%;
       height: 400px;
-      -webkit-filter: grayscale(10%);
-      filter: grayscale(10%);
   }
   .navbar {
       font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
+      margin-bottom: auto;
       background-color: #fd2d30;
-      border: 0;
+      border: auto;
       font-size: 12px !important;
       letter-spacing: 4px;
       opacity: 0.9;
   }
-  .navbar li a, .navbar .navbar-brand {
+  navbar-brand {
+      padding: 0;
+      margin: 5px 0 0 20px;
+      width: 80px;
+      height: 40px;
+  }
+  .navbar li a, .navbar {
       color: #d5d5d5 !important;
   }
   .navbar-nav li a:hover {
@@ -141,46 +152,4 @@
   textarea {
       resize: none;
   }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  </style>
+</style>
